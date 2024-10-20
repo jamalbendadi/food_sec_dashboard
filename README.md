@@ -6,6 +6,8 @@ This project is a **Food Security Dashboard** built with **React**, **Vite**, an
 
 1. **Install dependencies**:
    ```bash
+   git clone https://github.com/jamalbendadi/wfp_assessment
+   cd wfp_assessment
    npm install
    ```
 
@@ -16,5 +18,5 @@ This project is a **Food Security Dashboard** built with **React**, **Vite**, an
 
 3. **Run tests**:
    ```bash
-   npx run vitest
+   npx vitest
    ```
