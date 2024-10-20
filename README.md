@@ -8,8 +8,8 @@ This project is a **Food Security Dashboard** built with **React**, **Vite**, an
 
 1. **Install dependencies**:
    ```bash
-   git clone https://github.com/jamalbendadi/wfp_assessment
-   cd wfp_assessment
+   git clone https://github.com/jamalbendadi/food_sec_dashboard
+   cd food_sec_dashboard
    npm install
    ```
 
