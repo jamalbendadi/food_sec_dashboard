@@ -41,7 +41,7 @@ function App() {
 
 
   return (
-    <>
+    <div style={{height: '100%', width: '100%'}} data-testid="map">
       <Map reuseMaps
         mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
         {...viewState}
@@ -49,6 +49,7 @@ function App() {
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onMouseMove={onHover}
         interactiveLayerIds={['data']}
+
       >
         <Source id="africa" type="geojson" data={africa_shape} promoteId="iso_a3">
           <Layer {...dataLayer} />
@@ -57,7 +58,7 @@ function App() {
           <MetricsTooltip hoverInfo={hoverInfo} />
         )}
       </Map>
-    </>
+    </div>
   )
 }
 
