@@ -5,8 +5,7 @@ import { ApiService } from '@/infrastructure/ApiService';
 import africa_shape from '@/assets/africa_shapes/africa_shape_new.json';
 import MetricsTooltip from './components/MetricsTooltip';
 import type { HoverInfo } from '@/types/hoverInfo';
-import './App.css'
-
+import Sidebar from './components/Sidebar';
 
 const apiService = new ApiService();
 function App() {
@@ -41,6 +40,7 @@ function App() {
 
 
   return (
+    <>
     <div style={{height: '100%', width: '100%'}} data-testid="map">
       <Map reuseMaps
         mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
@@ -59,6 +59,8 @@ function App() {
         )}
       </Map>
     </div>
+    <Sidebar/>
+    </>
   )
 }
 
